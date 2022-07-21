@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test site</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script>
+        window.getGliaContext = function () {
+            return {
+                oidcToken: 'eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiYWNjZXNzX3Rva2VuIjoicmFuZG9tX2FjY2Vzc190b2tlbiIsInJlZnJlc2hfdG9rZW4iOiJyYW5kb21fcmVmcmVzaF90b2tlbiIsImlhdCI6MTUxNjIzOTAyMn0.NmK5uF-v5bAg_xK0Ukx3A5GwHFBja-TNKVraMpww5nZXzgdjEPrz5edNhHDp6eWYw0ZwxD5_e90uPc8ATNxaaw'
+            };
+        }
+    </script>
+    <script async src="//api.at.samo.io/salemove_integration.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper blue lighten-2">
+            <a href="./index.html" class="brand-logo">Test site</a>
+            <a href="javascript:;" data-target="hamburger" class="sidenav-trigger"><i
+                    class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="active"><a href="./works.html">Works</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="hamburger">
+        <li class="active"><a href="./works.html">Works</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card amber lighten-2">
+                <div class="card-content grey-text">
+                    <span class="card-title">Attention</span>
+                    <p>This is a test website which provides no value for everybody except its creator.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card blue lighten-4">
+                <div class="card-content black-text">
+                    <span class="card-title">1st Job</span>
+                    <p><a href="https://pipedrive.com/">Nortal</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card blue lighten-4">
+                <div class="card-content black-text">
+                    <span class="card-title">2nd Job</span>
+                    <p><a href="https://bolt.eu/">Pipedrive</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card blue lighten-4">
+                <div class="card-content black-text">
+                    <span class="card-title">3rd Job</span>
+                    <p><a href="https://glia.com/">Glia</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => M.Sidenav.init(document.getElementById('hamburger')));
+    </script>
+</body>
+
+</html>
